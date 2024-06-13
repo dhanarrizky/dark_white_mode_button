@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+}
+
+.white-btn {
+    height: 200px;
+    width: 500px;   
+    border-radius: 300px;
+    background-color: #00b7ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.white-btn .slider {
+    height: 90%;
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    transition: 1s;
+    z-index: 2;
+}
+    
+/* .white-btn .slider:hover {
+    padding-left: 300px;
+    transition: 1s;
+} */
+
+.white-btn .slider .pointer-btn ,
+.white-btn .slider .pointer-btn .sun-moon {
+    border-radius: 50%;
+}
+
+.white-btn .slider .pointer-btn {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    width: 180px;
+}
+
+.white-btn .slider .pointer-btn .sun-moon {
+    background-color: yellow;
+    height: 150px;
+    width: 150px;
+}
+
+/* drawing background */
+.white-btn .background-light{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    border-radius: 120px;
+    height: 100%;
+}
+    
+.white-btn .background-light .light-one {
+    background-color: rgba(255, 255, 255, 0.171);
+    height: 100%;
+    width: 90%;
+    border-radius: 120px;
+}
+    
+.white-btn .background-light .light-one .light-two {
+    background-color: rgba(255, 255, 255, 0.171);
+    border-radius: 120px;
+    height: 100%;
+    width: 80%;
+}
+    
+.white-btn .background-light .light-one .light-two .light-three {
+    background-color: rgba(255, 255, 255, 0.171);
+    border-radius: 120px;
+    height: 100%;
+    width: 70%;
+}
+
+/* drawing cloud */
+.white-btn .background-cloud {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    border-radius: 120px;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.white-btn .background-cloud .cloud-1,
+.white-btn .background-cloud .cloud-2,
+.white-btn .background-cloud .cloud-3,
+.white-btn .background-cloud .cloud-4,
+.white-btn .background-cloud .cloud-5,
+.white-btn .background-cloud .cloud-6,
+.white-btn .background-cloud .cloud-7 {
+    background-color: white;
+    border-radius: 50%;
+    position: inherit;
+}
+
+.white-btn .background-cloud .cloud-1 {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.white-btn .background-cloud .cloud-2 {
+    height: 100px;
+    width: 100px;
+    right: 100px;
+}
+
+.white-btn .background-cloud .cloud-3 {
+    height: 100px;
+    width: 100px;
+    right: 60px;
+    bottom: -20px;
+}
+    
+.white-btn .background-cloud .cloud-4 {
+    height: 70px;
+    width: 70px;
+    right: 150px;
+    bottom: -20px;
+}
+
+.white-btn .background-cloud .cloud-5 {
+    height: 70px;
+    width: 70px;
+    right: 180px;
+    bottom: -20px;
+}
+
+.white-btn .background-cloud .cloud-6 {
+    height: 40px;
+    width: 40px;
+    right: 230px;
+    bottom: -20px;
+}
+
+.white-btn .background-cloud .cloud-7 {
+    height: 40px;
+    width: 40px;
+    right: -10px;
+    bottom: 70px;
+}
+
+
+/* dark mode */
+
+.dark-btn {
+    height: 200px;
+    width: 500px;
+    border-radius: 300px;
+    background-color: #424242;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.dark-btn .slider {
+    height: 90%;
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    transition: 1s;
+    z-index: 2;
+    padding-left: 300px;
+}
+
+.dark-btn .slider .pointer-btn ,
+.dark-btn .slider .pointer-btn .sun-moon {
+    border-radius: 50%;
+}
+
+.dark-btn .slider .pointer-btn {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    width: 180px;
+}
+
+.dark-btn .slider .pointer-btn .sun-moon {
+    background-color: yellow;
+    height: 150px;
+    width: 150px;
+}
+
+.dark-btn .slider .pointer-btn .sun-moon .moons {
+    background-color: #fff;
+    position: inherit;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}
+
+/* drawing background */
+.dark-btn .background-light{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 120px;
+    height: 100%;
+}
+    
+.dark-btn .background-light .light-one {
+    background-color: rgba(255, 255, 255, 0.171);
+    height: 100%;
+    width: 90%;
+    border-radius: 120px;
+    display: flex;
+    justify-content: flex-end;
+}
+    
+.dark-btn .background-light .light-one .light-two {
+    background-color: rgba(255, 255, 255, 0.171);
+    border-radius: 120px;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+    
+.dark-btn .background-light .light-one .light-two .light-three {
+    background-color: rgba(255, 255, 255, 0.171);
+    border-radius: 120px;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* drawing cloud */
+.dark-btn .background-cloud {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    border-radius: 120px;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+}
+
+.dark-btn .background-cloud .cloud-1,
+.dark-btn .background-cloud .cloud-2,
+.dark-btn .background-cloud .cloud-3,
+.dark-btn .background-cloud .cloud-4,
+.dark-btn .background-cloud .cloud-5,
+.dark-btn .background-cloud .cloud-6,
+.dark-btn .background-cloud .cloud-7 {
+    background-color: white;
+    border-radius: 50%;
+    position: inherit;
+}
+
+.dark-btn .background-cloud .cloud-1 {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.dark-btn .background-cloud .cloud-2 {
+    height: 100px;
+    width: 100px;
+    left: 100px;
+}
+
+.dark-btn .background-cloud .cloud-3 {
+    height: 100px;
+    width: 100px;
+    left: 60px;
+    bottom: -20px;
+}
+    
+.dark-btn .background-cloud .cloud-4 {
+    height: 70px;
+    width: 70px;
+    left: 150px;
+    bottom: -20px;
+}
+
+.dark-btn .background-cloud .cloud-5 {
+    height: 70px;
+    width: 70px;
+    left: 180px;
+    bottom: -20px;
+}
+
+.dark-btn .background-cloud .cloud-6 {
+    height: 40px;
+    width: 40px;
+    left: 230px;
+    bottom: -20px;
+}
+
+.dark-btn .background-cloud .cloud-7 {
+    height: 40px;
+    width: 40px;
+    left: -10px;
+    bottom: 70px;
+}
