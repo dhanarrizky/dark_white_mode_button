@@ -1,4 +1,12 @@
-const whiteBtn = document.querySelector(".white-btn");
+const btn = document.querySelector("#wd-btn");
 
-whiteBtn.addEventListener("click", {
-})
+btn.addEventListener("click", (e) => {
+    if (btn.classList.contains('white-btn')) {
+        btn.classList.remove('white-btn');
+        btn.classList.add('dark-btn');
+    } else {
+        btn.classList.remove('dark-btn');
+        btn.classList.add('white-btn');
+    }
+    console.log("test click");
+});
