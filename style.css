@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    transition: 1s;
 }
 
 .container {
@@ -28,13 +29,11 @@
     width: 95%;
     display: flex;
     justify-content: flex-start;
-    transition: 1s;
     z-index: 2;
 }
     
 /* .white-btn .slider:hover {
     padding-left: 300px;
-    transition: 1s;
 } */
 
 .white-btn .slider .pointer-btn ,
@@ -179,7 +178,6 @@
     width: 95%;
     display: flex;
     justify-content: flex-start;
-    transition: 1s;
     z-index: 2;
     padding-left: 300px;
 }
